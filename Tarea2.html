@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea2</title>
+</head>
+<body>
+    <form name="Tarea 2 programacion IV">
+        <h1> Curriculum Vitae </h1>
+        <h2> Informacion personal </h2>
+
+        Nombre: 
+        <input type="text" name="nombre" placeholder="Nombre"/>
+        <input type="text" name="apellido1" placeholder="Primer apellido"/>
+        <input type="text" name="apellido2" placeholder="Segundo apellido"/>
+
+        <p>
+            Cedula de identidad:
+            <input type="text" name="Cedula" placeholder="101230456"/>
+        </p>
+
+        <p>
+            Correo electronico:
+            <input type="email" placeholder="Correo electronico"/>
+
+            Telefono:
+            <input type="tel" placeholder="Telefono primario"/>
+            <input type="tel" placeholder="Telefono secundario"/>
+        </p>
+
+        <p>
+            Fecha de nacimiento:
+            <input type="date" name="nacimiento"/>
+        </p>
+        <p>
+            Género:
+            <input type="radio" name="genero" value="F"/>Femenino
+            <input type="radio" name="genero" value="M"/>Masculino
+            <input type="radio" name="genero" value="O"/>Otro
+            <input type="radio" name="genero" value="F"/>Prefiero no decir            
+        </p>
+
+        <p>
+            Estado civil:
+            <input type="checkbox" value="Solteria"/> Soltero(a)
+            <input type="checkbox" value="Concubinato"/> Union libre
+            <input type="checkbox" value="Casamiento"/> Casado(a)
+            <input type="checkbox" value="Divorcio"/> Divorciado(a)
+            <input type="checkbox" value="Viudez"/> Viudo(a)       
+
+        </p>
+        <p>
+            Direccion
+            <br>
+            Provincia
+            <Select name="Provincia">
+                <option value="San Jose"> San Jose</option>
+                <option value="Heredia"> Heredia</option>
+                <option value="Alajuela"> Alajuela</option>
+                <option value="Cartago"> Cartago</option>
+                <option value="Guanacaste"> Guanacaste</option>
+                <option value="Puntarenas"> Puntarenas</option>
+                <option value="Limon"> Limon</option>
+
+            </Select>
+
+            Canton
+            <select name="Canton">
+                <optgroup label="San Jose">
+                    <option value="Central"> Central </option>
+                    <option value="Perez Zeledon"> Perez Zeledon </option>
+                    <option value="Escazu"> Escazu </option>
+                </optgroup>
+                <optgroup label="Heredia">
+                    <option value="Central"> Central </option>
+                    <option value="Flores"> Flores </option>
+                    <option value="San Isidro"> San Isidro </option>
+                </optgroup>
+                <optgroup label="Alajuela">
+                    <option value="Central"> Central </option>
+                    <option value="Rio Segundo"> Rio Segundo </option>
+                    <option value="San Carlos"> San Carlos </option>
+                </optgroup>
+                <optgroup label="Cartago">
+                    <option value="Ochomogo"> Ochomogo </option>
+                    <option value="Paraiso"> Paraiso </option>
+                    <option value="Dota"> Dota </option>
+                </optgroup>
+                <optgroup label="Guanacaste">
+                    <option value="Liberia"> Liberia </option>
+                    <option value="Nicoya"> Nicoya </option>
+                    <option value="Abangares"> Abangares </option>
+                </optgroup>
+                <optgroup label="Puntarenas">
+                    <option value="Monteverde"> Monteverde </option>
+                    <option value="Quepos"> Quepos </option>
+                    <option value="Osa"> Osa </option>
+                </optgroup>
+                <optgroup label="Limon">
+                    <option value="Talamanca"> Talamanca </option>
+                    <option value="Cahuita"> Cahuita </option>
+                    <option value="Tortuguero"> Tortuguero </option>
+                </optgroup>
+
+            </select>
+
+            <p>
+                <textarea name="Otras senhas" id="" cols="30" rows="10" placeholder="Otras señas"></textarea>
+            </p>
+
+        </p>
+
+        <h2> Información academica</h2>      
+        <p>
+            Educación formal (marque las que posea):
+            <br>
+            <input type="checkbox" value="Primaria inc"/> Primaria incompleta
+            <br>
+            <input type="checkbox" value="Primaria com"/> Primaria completa
+            <br>
+            <input type="checkbox" value="Secundaria inc"/> Secundaria incompleta
+            <br>
+            <input type="checkbox" value="Secundaria com"/> Secundaria completa
+            <br>
+            <input type="checkbox" value="tecnica"/> Educacion tecnica
+            <br>
+            <input type="checkbox" value="colegio universitario"/> Colegio universitario
+            <br>
+            <input type="checkbox" value="diplomado"/> Diplomado
+            <br>
+            <input type="checkbox" value="tecnica"/> Educacion tecnica 
+            <br>
+            <input type="checkbox" value="bachiller universitario"/> Bachillerato universitario
+            <br>
+            <input type="checkbox" value="Licenciatura"/> Licenciatura
+            <br>
+            <input type="checkbox" value="Maestría"/> Maestría
+            <br>
+            <input type="checkbox" value="Doctorado"/> doctorado 
+            <br>
+            <input type="checkbox" value="Post-doctorado"/> Post-doctorado
+            <br>
+            <input type="checkbox" value="Posgrado"/> Posgrado
+            <br>
+        </p>
+
+        <h2>Experiencia Laboral</h2>
+
+        <p>
+            <input type="number" value="0"/> Años de experiencia
+        </p>
+
+        <p>
+            Descripción de su perfil profesional
+
+            <p>
+            <textarea name="perfil"
+                cols="80"
+                rows="5"
+                placeholder="Ingrese su descripción profesional"
+             ></textarea>
+            </p>
+        </p>
+
+        <h2>Para ser contactado</h2>
+        <p>
+            Semana en la que puede ser contactado:
+            <input type="week" placeholder="Semana"/>
+        </p>
+        <p>
+            Horario en el que puede ser contactado:
+            <p>
+                desde:
+                <input type="time" placeholder="Horario"/>
+                Hasta: 
+                <input type="time" placeholder="Horario"/>
+            </p>
+            
+        </p>
+
+        <p>
+            En caso de ser contratado, indicar cuantos dias de preaviso tiene que dar:
+            <input type="number" placeholder="dias" min="0" max="30"/>
+        </p>
+
+        <p>
+            Por favor cree una contraseña 
+            <p>
+                <input type="password"/>
+
+            </p>
+            <p>
+                confirme su contraseña
+                <br>
+                <input type="password"/>
+
+            </p>
+        </p>
+
+        <br>
+        <input type="image" src="boton.png" alt="Enviar" width="80" height="80"/>
+
+
+    </form>
+    
+</body>
+</html>
