@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4</title> <!-- introduccion a JS -->
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+    
+<body>
+    <header> <h1 id="titulo cv"> Intro JS</h1></header>
+
+    <form id="dataForm" name="dataForm"  class="form" action="">
+        <div class="cvInfo" id="dataContainer" name="dataContainer">
+            <div class="data" id="personalDataContainer">
+                <h2>Personal Data</h2>
+                <label id="lblFirstName" for=""> First Name</label>
+                <input id="txtFirstName" type="text">
+                <label id="lblLastName" for=""> Last Name</label>
+                <input id="txtLastName" type="text">
+                <label id="lblEmail" for="">Email</label>
+                <input id="txtEmail" type="text">
+                <label id="lblPhone" for="">Telephone number</label>
+                <input id="txtPhone" type="text">
+            </div>
+            <div class="data" id="educationDataContainer">
+                <h2>Education</h2>
+                <label id="lblEduName" for=""> Institution</label>
+                <input id="txtEduName" type="text">
+                <label id="lblEduStart" for="">Start date</label>
+                <input id="txtEduStart" type="datetime-local">
+                <label id="lblEduEnd" for="">End date</label>
+                <input id="txtEduEnd" type="datetime-local">
+                <label id="lblEduTitle" for="">Obtained title</label>
+                <input id="txtEduTitle" type="text">
+            </div>
+            <div class="data" id="workExperienceContainer">
+                <h2>Work Experience</h2>
+                <label id="lblCompanyName" for=""> Company name</label>
+                <input id="txtCompanyName" type="text">
+                <label id="lblJobStart" for="">Start date</label>
+                <input id="txtJobStart" type="datetime-local">
+                <label id="lblJobEnd" for="">End date</label>
+                <input id="txtJobEnd" type="datetime-local">
+                <label id="lblJobPosition" for="">Job position</label>
+                <input id="txtJobPosition" type="text">
+            </div>
+            <div class="data" id="skillsDataContainer">
+                <h2>Skills</h2>
+                <label id="lblSkill1" for=""> Skill 1</label>
+                <input id="txtSkill1" type="text">
+                <label id="lblSkill2" for=""> Skill 2</label>
+                <input id="txtSkill2" type="text">
+                <label id="lblSkill3" for=""> Skill 3</label>
+                <input id="txtSkill3" type="text">
+                <label id="lblSkill4" for=""> Skill 3</label>
+                <input id="txtSkill4" type="text">
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <input class="button" type="submit" value="Save">
+            <button class="button" id="remove"> Remove </button>
+        </div>
+        
+    </form>    
+</body>
+<script src="./JS/main.js"> </script>
+</html>
