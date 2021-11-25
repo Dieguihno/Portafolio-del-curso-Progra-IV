@@ -1,17 +1,19 @@
 import React from 'react'
 import './BarraBusqueda.css'
+import {AppContext} from '../context'
 
-function BarraBusqueda ({valorBusqueda, funcionBuscar}){
+function BarraBusqueda (){
+    const {valorBuscado, buscarTareas} = React.useContext(AppContext)
     const buscar = (event)=>{
-        funcionBuscar(event.target.value)
+        buscarTareas(event.target.value)
     }
 
     return (
         <input 
             className="BarraBusqueda"
-            placeholder="Buscar..."
+            placeholder="Tarea a buscar"
             onChange={buscar}
-            value={valorBusqueda}
+            value={valorBuscado}
             />
     )
 }

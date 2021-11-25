@@ -1,10 +1,12 @@
 import React from "react";
 import './Encabezado.css'
+import {AppContext} from '../context'
 
-function Encabezado ({completadas, total}){
+function Encabezado (){
+    const {tareasCompletadas, totalTareas} = React.useContext(AppContext)
     return (
         <h1 className="Encabezado">
-            Tareas completadas {completadas} de {total}
+            Tareas completadas {tareasCompletadas} de {totalTareas}
         </h1>
     )
 }
