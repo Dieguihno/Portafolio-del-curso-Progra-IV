@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import './BotonCrear.css'
 
 function BotonCrear (props){
@@ -6,11 +6,11 @@ function BotonCrear (props){
         props.setOpenModal(prevState => !prevState)
     }
     return (
-        <button className = "botonCrear"
-        onClick = {()=> onClickButton (
-            "clickado!"
-        )}>+
-            
+        <button 
+            className = "botonCrear"
+            onClick = {()=> onClickButton (
+                "clickado!"
+        )}>+            
         </button>
     )
 }

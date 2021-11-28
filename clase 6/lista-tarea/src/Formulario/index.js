@@ -3,24 +3,25 @@ import './Formulario.css'
 import {AppContext} from '../context'
 
 function Formulario() {
-    const [nuevaTarea, setNuevaTarea] = React.useState('');
+    const [nuevaTarea, setNuevaTarea] 
+    = React.useState('')
     const {
         agregarNueva,
         setOpenModal
-    } = React.useContext(AppContext);
+    } = React.useContext(AppContext)
 
     const cancelar = () => {
-        setOpenModal(false);
+        setOpenModal(false)
     }
 
     const agregar = (evento) => {
-        evento.preventDefault();
-        agregarNueva(nuevaTarea);
-        cancelar();
+        evento.preventDefault()
+        agregarNueva(nuevaTarea)
+        cancelar()
     }
 
     const cambiando = (evento) => {
-        setNuevaTarea(evento.target.value);
+        setNuevaTarea(evento.target.value)
     }
 
 
@@ -31,18 +32,18 @@ return (
             placeholder="Tarea"
             value={nuevaTarea}
             onChange={cambiando}
-            ></textarea>
+        ></textarea>
         <div className="Formulario-buttonContainer">
             <button 
                 className="Formulario-button Formulario-button-cancel"
                 type="button"
                 onClick={cancelar}>cancelar
-                </button>
+            </button>
             <button
                 className="Formulario-button Formulario-button-add"
                 type="submit">Agregar
-                </button>
-            </div>
+            </button>
+        </div>
     </form>
 )
 }

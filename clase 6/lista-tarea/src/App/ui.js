@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 import {Encabezado} from '../Encabezado'
 import {BarraBusqueda} from '../BarraBusqueda'
 import {ListaTareas} from '../ListaTareas'
 import {Tarea} from '../Tarea'
 import {BotonCrear} from '../BotonCrear'
 import {AppContext} from '../context'
-import {modal} from '../Modal'
-import{formulario} from '../Formulario'
+import {Modal} from '../Modal'
+import{Formulario} from '../Formulario'
 
 function UI(){
     const {btc,
@@ -19,8 +19,7 @@ function UI(){
     return (
         <React.Fragment>
           <Encabezado/>
-          <BarraBusqueda/>   
-           
+          <BarraBusqueda/>            
               <ListaTareas>
                 {<p> valor de 1 bitcoin: {btc}</p>}
                 {<p>{error}</p>}
@@ -32,18 +31,18 @@ function UI(){
                     onDelete = {()=>borrar(tarea.texto)}
                   />
                 ))}
-                {<p>Autor: </p>}
+                {<p>Autor: Diego Monge</p>}
               </ListaTareas>  
               {!!openModal && (
-                <modal>
-                  <formulario></formulario>
-                </modal>
+                <Modal>
+                  <Formulario></Formulario>
+                </Modal>
               )}     
               <BotonCrear
                   setOpenModal={setOpenModal}
               />                  
         </React.Fragment>
-      )
+  )
 }
 
 export {UI}

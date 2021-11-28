@@ -49,7 +49,10 @@ function AppProvider(props) {
 
     const agregarNueva = (text) => {
         const nuevaLista = [...tareas]
-        nuevaLista.push({texto: text, completada: false})
+        nuevaLista.push({
+            texto: text,
+             completada: false
+        })
         guardar(nuevaLista)
     }
 
@@ -72,8 +75,7 @@ function AppProvider(props) {
             nombreDelAutor,
             openModal,
             setOpenModal,
-            agregarNueva   
-
+            agregarNueva,
         }}>
             {props.children}
         </AppContext.Provider>
